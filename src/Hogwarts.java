@@ -49,7 +49,7 @@ public class Hogwarts {
 
     @Override
     public String toString() {
-        return "Hogwarts{" + name + '\'' + faculty + '\'' +
+        return "Hogwarts {" + name + " " + '\'' + faculty + '\'' +
                 ", powerMagic=" + powerMagic +
                 ", transgresDist=" + transgresDist +
                 '}';

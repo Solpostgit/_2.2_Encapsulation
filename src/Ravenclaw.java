@@ -3,7 +3,7 @@ class Ravenclaw extends Hogwarts {
     private int wisdom; //мудрость
     private int wit; //остроумие
     private int creativity; //творчество
-    public Griffindor(String name, String faculty, int powerMagic, int transgresDist, int mind, int wisdom, int wit, int creativity) {
+    public Ravenclaw(String name, String faculty, int powerMagic, int transgresDist, int mind, int wisdom, int wit, int creativity) {
         super(name, faculty, powerMagic, transgresDist);
         this.mind = mind;
         this.wisdom = wisdom;
