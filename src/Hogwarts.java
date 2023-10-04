@@ -1,31 +1,57 @@
 public class Hogwarts {
-    private String nameStudent;
-    private int magicPower;
-    private int transgressionDistance;
+    private String name;
+    private String faculty;
+    private int powerMagic;
+    private int transgresDist;
 
-    public Hogwarts(String nameStudent, int magicPower, int transgressionDistance) {
-        this.nameStudent = nameStudent;
-        this.magicPower = magicPower;
-        this.transgressionDistance = transgressionDistance;
+    public Hogwarts(String name, String faculty, int powerMagic, int transgresDist) {
+        this.name = name;
+        this.faculty = faculty;
+        this.powerMagic = powerMagic;
+        this.transgresDist = transgresDist;
     }
 
-    public String getNameStudent() {
-        return nameStudent;
+    public void printStudent() {
+        System.out.println(name + " " + faculty + " " + powerMagic + " " + transgresDist + " ");
     }
 
-    public int getMagicPower() {
-        return magicPower;
+    public String getName() {
+        return name;
     }
 
-    public int getTransgressionDistance() {
-        return transgressionDistance;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setMagicPower(int magicPower) {
-        this.magicPower = magicPower;
+    public String getFaculty() {
+        return faculty;
     }
 
-    public void setTransgressionDistance(int transgressionDistance) {
-        this.transgressionDistance = transgressionDistance;
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
+    }
+
+    public int getPowerMagic() {
+        return powerMagic;
+    }
+
+    public void setPowerMagic(int powerMagic) {
+        this.powerMagic = powerMagic;
+    }
+
+    public int getTransgresDist() {
+        return transgresDist;
+    }
+
+    public void setTransgresDist(int transgresDist) {
+        this.transgresDist = transgresDist;
+    }
+
+    @Override
+    public String toString() {
+        return "Hogwarts{" + name + '\'' + faculty + '\'' +
+                ", powerMagic=" + powerMagic +
+                ", transgresDist=" + transgresDist +
+                '}';
     }
 }
