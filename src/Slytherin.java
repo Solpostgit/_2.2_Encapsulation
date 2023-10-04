@@ -48,7 +48,6 @@ class Slytherin extends Hogwarts {
     public int getDomineering() {
         return domineering;
     }
-
     public void setDomineering(int domineering) {
         this.domineering = domineering;
     }
