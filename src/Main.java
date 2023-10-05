@@ -38,6 +38,7 @@ public class Main {
         compareStudent(hermioneGranger, dracoMalfoy); //сравниваем двух студентов
         compareStudent(zhouChang, marcusBelby); //сравниваем двух студентов
     }
+
     //Метод сравнения Гриффендорцев
     public static void compareFaculty(Griffindor object1, Griffindor object2) {
         int score1 = object1.getNobility() + object1.getHonor() + object1.getBravery();
@@ -80,6 +81,7 @@ public class Main {
         int scorePower2 = object2.getPowerMagic() + object2.getTransgresDist();
         System.out.println(object1.getName() + " обладает бОльшей мощностью магии, чем " + object2.getName());
     }
+}
 
         /*Hogwarts[] printedStudents = new Hogwarts[]{
                 new Griffindor("Harry Potter", "Griffindor", 7,6, 5, 6, 7),
@@ -97,4 +99,3 @@ public class Main {
         } */
 
 
-}
