@@ -29,10 +29,14 @@ public class Main {
         dracoMalfoy.printStudent();
         System.out.println();
 
-        compareFaculty(harryPotter, ronaldWeasley); //сравниваем Гриффиндорцев
-        compareFaculty(zachariahSmith, justinFinchFletchley); //сравниваем Пуффендуйцев
-        compareFaculty(padmaPatil, marcusBelby); //сравниваем Когтевранцев
-        compareFaculty(grahamMontague, gregoryGoyle); //сравниваем Слизеринцев
+        compareFaculty(harryPotter, ronaldWeasley); //сравниваем двух Гриффиндорцев
+        compareFaculty(zachariahSmith, justinFinchFletchley); //сравниваем двух Пуффендуйцев
+        compareFaculty(padmaPatil, marcusBelby); //сравниваем двух Когтевранцев
+        compareFaculty(grahamMontague, gregoryGoyle); //сравниваем двух Слизеринцев
+
+        System.out.println();
+        compareStudent(hermioneGranger, dracoMalfoy); //сравниваем двух студентов
+        compareStudent(zhouChang, marcusBelby); //сравниваем двух студентов
     }
     //Метод сравнения Гриффендорцев
     public static void compareFaculty(Griffindor object1, Griffindor object2) {
@@ -69,6 +73,14 @@ public class Main {
             System.out.println(object1.getName() + " лучший Слизеринец, чем " + object2.getName());
         } else System.out.println(object2.getName() + " лучший Слизеринец, чем " + object1.getName());
     }
+
+    //compareStudent сравнение студентов по силе магии и трансгрессии
+    public static void compareStudent(Hogwarts object1, Hogwarts object2) {
+        int scorePower1 = object1.getPowerMagic() + object1.getTransgresDist(); //сумма очков силаМагии и трансгрессия ;)
+        int scorePower2 = object2.getPowerMagic() + object2.getTransgresDist();
+        System.out.println(object1.getName() + " обладает бОльшей мощностью магии, чем " + object2.getName());
+    }
+
         /*Hogwarts[] printedStudents = new Hogwarts[]{
                 new Griffindor("Harry Potter", "Griffindor", 7,6, 5, 6, 7),
                 new Griffindor("Hermione Granger", "Griffindor", 5,5, 5, 5, 6),
