@@ -13,6 +13,17 @@ class Slytherin extends Hogwarts {
         this.domineering = domineering;
     }
 
+    @Override
+    public void printStudent() {
+        System.out.println(name + " " + faculty + " " + "Power Magic " + powerMagic + " " + "Transgression " + transgresDist + " " + "Slytherin {" +
+                "trick=" + trick +
+                ", determination=" + determination +
+                ", ambition=" + ambition +
+                ", resourcefulness=" + resourcefulness +
+                ", domineering=" + domineering +
+                '}');
+    }
+
     public int getTrick() {
         return trick;
     }
@@ -50,16 +61,5 @@ class Slytherin extends Hogwarts {
     }
     public void setDomineering(int domineering) {
         this.domineering = domineering;
-    }
-
-    @Override
-    public String toString() {
-        return "Slytherin{" +
-                "trick=" + trick +
-                ", determination=" + determination +
-                ", ambition=" + ambition +
-                ", resourcefulness=" + resourcefulness +
-                ", domineering=" + domineering +
-                '}';
     }
 }

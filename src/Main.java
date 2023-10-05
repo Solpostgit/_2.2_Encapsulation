@@ -19,8 +19,17 @@ public class Main {
         Slytherin grahamMontague = new Slytherin("Graham Montague", "Slytherin", 4, 5, 6, 5, 4, 5, 4);
         Slytherin gregoryGoyle = new Slytherin("Gregory Goyle", "Slytherin", 5, 4, 4, 4, 5, 4, 5);
 
-        PrintService printService = new PrintService();
-        printService.printStud(harryPotter);
+        System.out.println(zachariahSmith);
+        harryPotter.printStudent();
+        hermioneGranger.printStudent();
+        cedricDiggory.printStudent();
+        justinFinchFletchley.printStudent();
+        zhouChang.printStudent();
+        dracoMalfoy.printStudent();
+    }
+
+    public static
+
         /*Hogwarts[] printedStudents = new Hogwarts[]{
                 new Griffindor("Harry Potter", "Griffindor", 7,6, 5, 6, 7),
                 new Griffindor("Hermione Granger", "Griffindor", 5,5, 5, 5, 6),
@@ -36,5 +45,6 @@ public class Main {
                 new Slytherin("Gregory Goyle", "Slytherin", 5,4, 4, 4, 5, 4, 5)
         } */
 
-    }
+
+
 }

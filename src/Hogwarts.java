@@ -1,8 +1,8 @@
 public class Hogwarts {
-    private String name;
-    private String faculty;
-    private int powerMagic;
-    private int transgresDist;
+    String name;
+    String faculty;
+    int powerMagic;
+    int transgresDist;
 
     public Hogwarts(String name, String faculty, int powerMagic, int transgresDist) {
         this.name = name;
@@ -47,7 +47,6 @@ public class Hogwarts {
         this.transgresDist = transgresDist;
     }
 
-    @Override
     public String toString() {
         return "Hogwarts {" + name + " " + '\'' + faculty + '\'' +
                 ", powerMagic=" + powerMagic +

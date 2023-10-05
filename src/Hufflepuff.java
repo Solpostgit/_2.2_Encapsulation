@@ -2,11 +2,21 @@ class Hufflepuff extends Hogwarts {
     private int labour; //труд
     private int loyalty; //верность
     private int honesty; //честность
+
     public Hufflepuff(String name, String faculty, int powerMagic, int transgresDist, int labour, int loyalty, int honesty) {
         super(name, faculty, powerMagic, transgresDist);
         this.labour = labour;
         this.loyalty = loyalty;
         this.honesty = honesty;
+    }
+
+    @Override
+    public void printStudent() {
+        System.out.println(name + " " + faculty + " " + "Power Magic " + powerMagic + " " + "Transgression " + transgresDist + " " + "Hufflepuff {" +
+                "labour=" + labour +
+                ", loyalty=" + loyalty +
+                ", honesty=" + honesty +
+                '}');
     }
 
     public int getLabour() {

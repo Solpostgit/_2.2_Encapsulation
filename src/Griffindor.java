@@ -9,6 +9,15 @@ class Griffindor extends Hogwarts {
         this.bravery = bravery;
     }
 
+    @Override
+    public  void printStudent() {
+        System.out.println(name + " " + faculty + " " + "Power Magic " + powerMagic + " " + "Transgression " + transgresDist + " " + "Griffindor {" +
+                "nobility=" + nobility +
+                ", honor=" + honor +
+                ", bravery=" + bravery +
+                '}');
+    }
+
     public int getNobility() {
         return nobility;
     }
@@ -31,5 +40,14 @@ class Griffindor extends Hogwarts {
 
     public void setBravery(int bravery) {
         this.bravery = bravery;
+    }
+
+    @Override
+    public String toString() {
+        return "Griffindor {" +
+                "nobility=" + nobility +
+                ", honor=" + honor +
+                ", bravery=" + bravery +
+                '}';
     }
 }
