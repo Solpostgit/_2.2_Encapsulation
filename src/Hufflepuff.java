@@ -10,7 +10,7 @@ class Hufflepuff extends Hogwarts {
         this.honesty = honesty;
     }
 
-    @Override
+    @Override  //переопределил родительский метод, для этого установил идентификатор default у полей класса Hogwarts
     public void printStudent() {
         System.out.println(name + " " + faculty + " " + "Power Magic " + powerMagic + " " + "Transgression " + transgresDist + " " + "Hufflepuff {" +
                 "labour=" + labour +

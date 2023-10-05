@@ -9,7 +9,7 @@ class Griffindor extends Hogwarts {
         this.bravery = bravery;
     }
 
-    @Override
+    @Override //переопределил родительский метод, для этого установил идентификатор default у полей класса Hogwarts
     public  void printStudent() {
         System.out.println(name + " " + faculty + " " + "Power Magic " + powerMagic + " " + "Transgression " + transgresDist + " " + "Griffindor {" +
                 "nobility=" + nobility +
