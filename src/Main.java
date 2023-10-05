@@ -27,16 +27,27 @@ public class Main {
         zhouChang.printStudent();
         dracoMalfoy.printStudent();
 
-        compareFaculty(harryPotter, ronaldWeasley);
+        compareFaculty(harryPotter, ronaldWeasley); //сравниваем Гриффиндорцев
+        compareFaculty(zachariahSmith, justinFinchFletchley); //сравниваем Пуффендуйцев
     }
-
-    public static void compareFaculty (Griffindor object1, Griffindor object2) {
+    //Метод сравнения Гриффендорцев
+    public static void compareFaculty(Griffindor object1, Griffindor object2) {
         int score1 = object1.getNobility() + object1.getHonor() + object1.getBravery();
         int score2 = object2.getNobility() + object2.getHonor() + object2.getBravery();
         if (score1 > score2) {
             System.out.println(object1.getName() + " лучший Гриффиндорец, чем " + object2.getName());
         } else System.out.println(object2.getName() + " лучший Гриффиндорец, чем " + object1.getName());
     }
+
+    //Использую перегрузку метода compareFaculty для Hufflepuff
+    public static void compareFaculty(Hufflepuff object1, Hufflepuff object2) {
+        int score1 = object1.getLabour() + object1.getLoyalty() + object1.getHonesty();
+        int score2 = object2.getLabour() + object2.getLoyalty() + object2.getHonesty();
+        if (score1 > score2) {
+            System.out.println(object1.getName() + " лучший Пуффендуец, чем " + object2.getName());
+        } else System.out.println(object2.getName() + " лучший Пуффендуец, чем " + object1.getName());
+    }
+
 
         /*Hogwarts[] printedStudents = new Hogwarts[]{
                 new Griffindor("Harry Potter", "Griffindor", 7,6, 5, 6, 7),
@@ -52,7 +63,6 @@ public class Main {
                 new Slytherin("Graham Montague", "Slytherin", 4,5, 6, 5, 4,5, 4),
                 new Slytherin("Gregory Goyle", "Slytherin", 5,4, 4, 4, 5, 4, 5)
         } */
-
 
 
 }
