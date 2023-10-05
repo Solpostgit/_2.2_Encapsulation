@@ -20,7 +20,8 @@ public class Main {
         Slytherin gregoryGoyle = new Slytherin("Gregory Goyle", "Slytherin", 5, 4, 4, 4, 5, 4, 5);
 
         System.out.println(zachariahSmith);
-        harryPotter.printStudent();
+        System.out.println();
+        harryPotter.printStudent(); //метод описания студента
         hermioneGranger.printStudent();
         cedricDiggory.printStudent();
         justinFinchFletchley.printStudent();
@@ -31,6 +32,7 @@ public class Main {
         compareFaculty(harryPotter, ronaldWeasley); //сравниваем Гриффиндорцев
         compareFaculty(zachariahSmith, justinFinchFletchley); //сравниваем Пуффендуйцев
         compareFaculty(padmaPatil, marcusBelby); //сравниваем Когтевранцев
+        compareFaculty(grahamMontague, gregoryGoyle); //сравниваем Слизеринцев
     }
     //Метод сравнения Гриффендорцев
     public static void compareFaculty(Griffindor object1, Griffindor object2) {
@@ -59,6 +61,14 @@ public class Main {
         } else System.out.println(object2.getName() + " лучший Когтевранец, чем " + object1.getName());
     }
 
+    //Использую перегрузку метода compareFaculty для Slytherin
+    public static void compareFaculty(Slytherin object1, Slytherin object2) {
+        int score1 = object1.getTrick() + object1.getDetermination() + object1.getAmbition() + object1.getResourcefulness() + object1.getDomineering();
+        int score2 = object2.getTrick() + object2.getDetermination() + object2.getAmbition() + object2.getResourcefulness() + object2.getDomineering();
+        if (score1 > score2) {
+            System.out.println(object1.getName() + " лучший Слизеринец, чем " + object2.getName());
+        } else System.out.println(object2.getName() + " лучший Слизеринец, чем " + object1.getName());
+    }
         /*Hogwarts[] printedStudents = new Hogwarts[]{
                 new Griffindor("Harry Potter", "Griffindor", 7,6, 5, 6, 7),
                 new Griffindor("Hermione Granger", "Griffindor", 5,5, 5, 5, 6),
