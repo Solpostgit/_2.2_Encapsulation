@@ -26,9 +26,11 @@ public class Main {
         justinFinchFletchley.printStudent();
         zhouChang.printStudent();
         dracoMalfoy.printStudent();
+        System.out.println();
 
         compareFaculty(harryPotter, ronaldWeasley); //сравниваем Гриффиндорцев
         compareFaculty(zachariahSmith, justinFinchFletchley); //сравниваем Пуффендуйцев
+        compareFaculty(padmaPatil, marcusBelby); //сравниваем Когтевранцев
     }
     //Метод сравнения Гриффендорцев
     public static void compareFaculty(Griffindor object1, Griffindor object2) {
@@ -48,6 +50,14 @@ public class Main {
         } else System.out.println(object2.getName() + " лучший Пуффендуец, чем " + object1.getName());
     }
 
+    //Использую перегрузку метода compareFaculty для Ravenclaw
+    public static void compareFaculty(Ravenclaw object1, Ravenclaw object2) {
+        int score1 = object1.getMind() + object1.getWisdom() + object1.getWit() + object1.getCreativity();
+        int score2 = object2.getMind() + object2.getWisdom() + object2.getWit() + object2.getCreativity();
+        if (score1 > score2) {
+            System.out.println(object1.getName() + " лучший Когтевранец, чем " + object2.getName());
+        } else System.out.println(object2.getName() + " лучший Когтевранец, чем " + object1.getName());
+    }
 
         /*Hogwarts[] printedStudents = new Hogwarts[]{
                 new Griffindor("Harry Potter", "Griffindor", 7,6, 5, 6, 7),
