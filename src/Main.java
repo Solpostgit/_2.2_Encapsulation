@@ -26,9 +26,17 @@ public class Main {
         justinFinchFletchley.printStudent();
         zhouChang.printStudent();
         dracoMalfoy.printStudent();
+
+        compareFaculty(harryPotter, ronaldWeasley);
     }
 
-    public static
+    public static void compareFaculty (Griffindor object1, Griffindor object2) {
+        int score1 = object1.getNobility() + object1.getHonor() + object1.getBravery();
+        int score2 = object2.getNobility() + object2.getHonor() + object2.getBravery();
+        if (score1 > score2) {
+            System.out.println(object1.getName() + " лучший Гриффиндорец, чем " + object2.getName());
+        } else System.out.println(object2.getName() + " лучший Гриффиндорец, чем " + object1.getName());
+    }
 
         /*Hogwarts[] printedStudents = new Hogwarts[]{
                 new Griffindor("Harry Potter", "Griffindor", 7,6, 5, 6, 7),
