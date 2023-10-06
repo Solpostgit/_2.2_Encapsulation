@@ -1,8 +1,8 @@
 public class Hogwarts {
-    String name;
-    String faculty;
-    int powerMagic;
-    int transgresDist;
+    protected String name;
+    protected String faculty;
+    protected int powerMagic;
+    protected int transgresDist;
 
     public Hogwarts(String name, String faculty, int powerMagic, int transgresDist) {
         this.name = name;

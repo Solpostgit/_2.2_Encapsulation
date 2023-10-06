@@ -40,46 +40,46 @@ public class Main {
     }
 
     //Метод сравнения Гриффендорцев
-    public static void compareFaculty(Griffindor object1, Griffindor object2) {
-        int score1 = object1.getNobility() + object1.getHonor() + object1.getBravery();
-        int score2 = object2.getNobility() + object2.getHonor() + object2.getBravery();
+    public static void compareFaculty(Griffindor griffindorStudent1, Griffindor griffindorStudent2) {
+        int score1 = griffindorStudent1.getNobility() + griffindorStudent1.getHonor() + griffindorStudent1.getBravery();
+        int score2 = griffindorStudent2.getNobility() + griffindorStudent2.getHonor() + griffindorStudent2.getBravery();
         if (score1 > score2) {
-            System.out.println(object1.getName() + " лучший Гриффиндорец, чем " + object2.getName());
-        } else System.out.println(object2.getName() + " лучший Гриффиндорец, чем " + object1.getName());
+            System.out.println(griffindorStudent1.getName() + " лучший Гриффиндорец, чем " + griffindorStudent2.getName());
+        } else System.out.println(griffindorStudent2.getName() + " лучший Гриффиндорец, чем " + griffindorStudent1.getName());
     }
 
     //Использую перегрузку метода compareFaculty для Hufflepuff
-    public static void compareFaculty(Hufflepuff object1, Hufflepuff object2) {
-        int score1 = object1.getLabour() + object1.getLoyalty() + object1.getHonesty();
-        int score2 = object2.getLabour() + object2.getLoyalty() + object2.getHonesty();
+    public static void compareFaculty(Hufflepuff hufflepuffStudent1, Hufflepuff hufflepuffStudent2) {
+        int score1 = hufflepuffStudent1.getLabour() + hufflepuffStudent1.getLoyalty() + hufflepuffStudent1.getHonesty();
+        int score2 = hufflepuffStudent2.getLabour() + hufflepuffStudent2.getLoyalty() + hufflepuffStudent2.getHonesty();
         if (score1 > score2) {
-            System.out.println(object1.getName() + " лучший Пуффендуец, чем " + object2.getName());
-        } else System.out.println(object2.getName() + " лучший Пуффендуец, чем " + object1.getName());
+            System.out.println(hufflepuffStudent1.getName() + " лучший Пуффендуец, чем " + hufflepuffStudent2.getName());
+        } else System.out.println(hufflepuffStudent2.getName() + " лучший Пуффендуец, чем " + hufflepuffStudent1.getName());
     }
 
     //Использую перегрузку метода compareFaculty для Ravenclaw
-    public static void compareFaculty(Ravenclaw object1, Ravenclaw object2) {
-        int score1 = object1.getMind() + object1.getWisdom() + object1.getWit() + object1.getCreativity();
-        int score2 = object2.getMind() + object2.getWisdom() + object2.getWit() + object2.getCreativity();
+    public static void compareFaculty(Ravenclaw ravenclawStudent1, Ravenclaw ravenclawStudent2) {
+        int score1 = ravenclawStudent1.getMind() + ravenclawStudent1.getWisdom() + ravenclawStudent1.getWit() + ravenclawStudent1.getCreativity();
+        int score2 = ravenclawStudent2.getMind() + ravenclawStudent2.getWisdom() + ravenclawStudent2.getWit() + ravenclawStudent2.getCreativity();
         if (score1 > score2) {
-            System.out.println(object1.getName() + " лучший Когтевранец, чем " + object2.getName());
-        } else System.out.println(object2.getName() + " лучший Когтевранец, чем " + object1.getName());
+            System.out.println(ravenclawStudent1.getName() + " лучший Когтевранец, чем " + ravenclawStudent2.getName());
+        } else System.out.println(ravenclawStudent2.getName() + " лучший Когтевранец, чем " + ravenclawStudent1.getName());
     }
 
     //Использую перегрузку метода compareFaculty для Slytherin
-    public static void compareFaculty(Slytherin object1, Slytherin object2) {
-        int score1 = object1.getTrick() + object1.getDetermination() + object1.getAmbition() + object1.getResourcefulness() + object1.getDomineering();
-        int score2 = object2.getTrick() + object2.getDetermination() + object2.getAmbition() + object2.getResourcefulness() + object2.getDomineering();
+    public static void compareFaculty(Slytherin slytherinStudent1, Slytherin slytherinStudent2) {
+        int score1 = slytherinStudent1.getTrick() + slytherinStudent1.getDetermination() + slytherinStudent1.getAmbition() + slytherinStudent1.getResourcefulness() + slytherinStudent1.getDomineering();
+        int score2 = slytherinStudent2.getTrick() + slytherinStudent2.getDetermination() + slytherinStudent2.getAmbition() + slytherinStudent2.getResourcefulness() + slytherinStudent2.getDomineering();
         if (score1 > score2) {
-            System.out.println(object1.getName() + " лучший Слизеринец, чем " + object2.getName());
-        } else System.out.println(object2.getName() + " лучший Слизеринец, чем " + object1.getName());
+            System.out.println(slytherinStudent1.getName() + " лучший Слизеринец, чем " + slytherinStudent2.getName());
+        } else System.out.println(slytherinStudent2.getName() + " лучший Слизеринец, чем " + slytherinStudent1.getName());
     }
 
     //compareStudent сравнение студентов по силе магии и трансгрессии
-    public static void compareStudent(Hogwarts object1, Hogwarts object2) {
-        int scorePower1 = object1.getPowerMagic() + object1.getTransgresDist(); //сумма очков силаМагии и трансгрессия ;)
-        int scorePower2 = object2.getPowerMagic() + object2.getTransgresDist();
-        System.out.println(object1.getName() + " обладает бОльшей мощностью магии, чем " + object2.getName());
+    public static void compareStudent(Hogwarts hogwartsStudent1, Hogwarts hogwartsStudent2) {
+        int scorePower1 = hogwartsStudent1.getPowerMagic() + hogwartsStudent1.getTransgresDist(); //сумма очков силаМагии и трансгрессия ;)
+        int scorePower2 = hogwartsStudent2.getPowerMagic() + hogwartsStudent2.getTransgresDist();
+        System.out.println(hogwartsStudent1.getName() + " обладает бОльшей мощностью магии, чем " + hogwartsStudent2.getName());
     }
 }
 
